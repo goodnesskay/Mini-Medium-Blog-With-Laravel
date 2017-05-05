@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard </title>
+
+    <link rel="apple-touch-icon" href="../public/dashboard/assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../public/dashboard/assets/images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../public/dashboard/css/bootstrap.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/css/bootstrap-extend.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/assets/css/site.min3f0d.css?v2.2.0">
+
+    <!-- Skin tools (demo site only) -->
+    <link rel="stylesheet" href="../public/dashboard/css/skintools.min3f0d.css?v2.2.0">
+    <script src="../public/dashboard/assets/js/sections/skintools.min.js"></script>
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../public/dashboard/vendor/animsition/animsition.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/asscrollable/asScrollable.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/switchery/switchery.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/intro-js/introjs.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/slidepanel/slidePanel.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/flag-icon-css/flag-icon.min3f0d.css?v2.2.0">
+
+    <!-- Plugins For This Page -->
+    <link rel="stylesheet" href="../public/dashboard/vendor/chartist-js/chartist.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/aspieprogress/asPieProgress.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min3f0d.css?v2.2.0">
+
+    <!-- Page -->
+    <link rel="stylesheet" href="../public/dashboard/assets/examples/css/dashboard/ecommerce.min3f0d.css?v2.2.0">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../public/dashboard/fonts/web-icons/web-icons.min3f0d.css?v2.2.0">
+    <link rel="stylesheet" href="../public/dashboard/fonts/brand-icons/brand-icons.min3f0d.css?v2.2.0">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+    <link rel="stylesheet" href="../public/dashboard/fonts/font-awesome/font-awesome.min3f0d.css?v2.2.0">
+
+    <!--[if lt IE 9]>
+    <script src="../public/dashboard/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+    <script src="../public/dashboard/vendor/media-match/media.match.min.js"></script>
+    <script src="../public/dashboard/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Scripts -->
+    <script src="../public/dashboard/vendor/modernizr/modernizr.min.js"></script>
+    <script src="../public/dashboard/vendor/breakpoints/breakpoints.min.js"></script>
+    <script>
+        Breakpoints();
+    </script>
+</head>
+
+<body class="@yield('body')">
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+                data-toggle="menubar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+                data-toggle="collapse">
+            <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+            <img class="navbar-brand-logo" src="../public/dashboard/assets/images/logo.png" title="Remark">
+            <span class="navbar-brand-text hidden-xs"> Pivot</span>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
+                data-toggle="collapse">
+            <span class="sr-only">Toggle Search</span>
+            <i class="icon wb-search" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+            <!-- Navbar Toolbar -->
+            <ul class="nav navbar-toolbar">
+                <li class="hidden-float" id="toggleMenubar">
+                    <a data-toggle="menubar" href="#" role="button">
+                        <i class="icon hamburger hamburger-arrow-left">
+                            <span class="sr-only">Toggle menubar</span>
+                            <span class="hamburger-bar"></span>
+                        </i>
+                    </a>
+                </li>
+                <li class="hidden-xs" id="toggleFullscreen">
+                    <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                        <span class="sr-only">Toggle fullscreen</span>
+                    </a>
+                </li>
+                <li class="hidden-float">
+                    <a class="icon wb-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
+                       role="button">
+                        <span class="sr-only">Toggle Search</span>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- End Navbar Toolbar -->
+
+            <!-- Navbar Toolbar Right -->
+            <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+
+                <li class="dropdown">
+                    <a style="text-transform: capitalize;" data-toggle="dropdown" href="javascript:void(0)" title="Notifications" aria-expanded="false"
+                       data-animation="scale-up" role="button">
+                        Hello Blogger's name
+                    </a>
+
+                </li>
+                <li class="dropdown">
+                    <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+                       data-animation="scale-up" role="button">
+              <span class="avatar avatar-online">
+                <img src="../public/dashboard/portraits/5.jpg" alt="...">
+                <i></i>
+              </span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a href="" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Profile</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Password Reset</a>
+                        </li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+                       aria-expanded="false">
+                        <span class="flag-icon flag-icon-ng"></span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- End Navbar Collapse -->
+
+        <!-- Site Navbar Seach -->
+        <div class="collapse navbar-search-overlap" id="site-navbar-search">
+            <form role="search">
+                <div class="form-group">
+                    <div class="input-search">
+                        <i class="input-search-icon wb-search" aria-hidden="true"></i>
+                        <input type="text" class="form-control" name="site-search" placeholder="Search...">
+                        <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
+                                data-toggle="collapse" aria-label="Close"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- End Site Navbar Seach -->
+    </div>
+</nav>
+
+<div class="site-menubar">
+    <div class="site-menubar-body">
+        <div>
+            <div>
+                <ul class="site-menu">
+                    <li class="site-menu-category">General</li>
+                    <li class="site-menu-item has-sub active open">
+                        <a href="{{ url('home') }}">
+                            <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                            <span class="site-menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item has-sub active ">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                            <span class="site-menu-title">Profile</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="profile.html">
+                                    <span class="site-menu-title">Update Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub active ">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon wb-grid-4" aria-hidden="true"></i>
+                            <span class="site-menu-title">Blog</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="">
+                                    <span class="site-menu-title">Create Post</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link" href="">
+                                    <span class="site-menu-title">View Posts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-menubar-footer">
+        <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
+           data-original-title="Settings">
+            <span class="icon wb-settings" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
+            <span class="icon wb-eye-close" aria-hidden="true"></span>
+        </a>
+        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+            <span class="icon wb-power" aria-hidden="true"></span>
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+    </div>
+</div>
+
+<div class="page animsition">
+    <div class="page-header">
+        <h1 class="page-title">Update Personal Information</h1>
+    </div>
+    <div class="page-content">
+        <div class="panel">
+            <div class="panel-body container-fluid">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="example-wrap">
+                            <div class="example">
+                                <!--
+                                 <div class="alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <p class="text-center"></p>
+                                </div>
+
+                                <div class="alert alert-danger alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <p class="text-center"></p>
+                                </div>
+                                 -->
+                                <form action="" method="post" role="form" enctype="multipart/form-data">
+
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" for="inputBasicFirstName">Full Name</label>
+                                            <input type="text" class="form-control" id="inputBasicFirstName" name="name"
+                                                   placeholder="Full Name" autocomplete="off" />
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" for="inputBasicEmail">Email Address</label>
+                                            <input type="email" class="form-control"  id="inputBasicEmail" name="email"
+                                                   placeholder="Email Address" autocomplete="off" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" >Mobile Number</label>
+                                            <input type="text" class="form-control" name="mobile_number"
+                                                   placeholder="Mobile Number" autocomplete="off" />
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" >Gender</label>
+                                            <select name="sex" class="form-control" data-plugin="select2">
+                                                <option disabled>Select your sex</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" >Facebook Url</label>
+                                            <input type="text" class="form-control"  name="facebook_url"    placeholder="Facebook Url" autocomplete="off" />
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" >Twitter Url</label>
+                                            <input type="text" class="form-control"  name="twitter_url"    placeholder="Twitter Url" autocomplete="off" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" >Linked Url</label>
+                                            <input type="text" class="form-control"  name="linkedin_url"    placeholder="Facebook Url" autocomplete="off" />
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label class="control-label" >Short Profile Caption</label>
+                                            <input type="text" class="form-control"  name=""    placeholder="Short Profile Caption E.g A prolific  tech. blogger" autocomplete="off" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-sm-12">
+                                            <label class="control-label" >Long Description</label>
+                                            <textarea class="form-control"  name="" rows="5" placeholder="Long Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button  class="btn btn-primary">Update</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-xs"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End Page -->
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer-legal">© <?php echo date('Y'); ?> <a href="{{ url('/') }}">Pivot</a></div>
+    <div class="site-footer-right">
+        Made with <i class="red-600 wb wb-heart"></i> by <a href="{{ url('/') }}">Pivot Team</a>
+    </div>
+</footer>
+<!-- Core  -->
+<script src="../public/dashboard/vendor/jquery/jquery.min.js"></script>
+<script src="../public/dashboard/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../public/dashboard/vendor/animsition/animsition.min.js"></script>
+<script src="../public/dashboard/vendor/asscroll/jquery-asScroll.min.js"></script>
+<script src="../public/dashboard/vendor/mousewheel/jquery.mousewheel.min.js"></script>
+<script src="../public/dashboard/vendor/asscrollable/jquery.asScrollable.all.min.js"></script>
+<script src="../public/dashboard/vendor/ashoverscroll/jquery-asHoverScroll.min.js"></script>
+
+<!-- Plugins -->
+<script src="../public/dashboard/vendor/switchery/switchery.min.js"></script>
+<script src="../public/dashboard/vendor/intro-js/intro.min.js"></script>
+<script src="../public/dashboard/vendor/screenfull/screenfull.min.js"></script>
+<script src="../public/dashboard/vendor/slidepanel/jquery-slidePanel.min.js"></script>
+
+<!-- Plugins For This Page -->
+<script src="../public/dashboard/vendor/chartist-js/chartist.min.js"></script>
+<script src="../public/dashboard/vendor/aspieprogress/jquery-asPieProgress.min.js"></script>
+<script src="../public/dashboard/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.min.js"></script>
+
+<!-- Scripts -->
+<script src="../public/dashboard/js/core.min.js"></script>
+<script src="../public/dashboard/assets/js/site.min.js"></script>
+
+<script src="../public/dashboard/assets/js/sections/menu.min.js"></script>
+<script src="../public/dashboard/assets/js/sections/menubar.min.js"></script>
+<script src="../public/dashboard/assets/js/sections/gridmenu.min.js"></script>
+<script src="../public/dashboard/assets/js/sections/sidebar.min.js"></script>
+
+<script src="../public/dashboard/js/configs/config-colors.min.js"></script>
+<script src="../public/dashboard/assets/js/configs/config-tour.min.js"></script>
+
+<script src="../public/dashboard/js/components/asscrollable.min.js"></script>
+<script src="../public/dashboard/js/components/animsition.min.js"></script>
+<script src="../public/dashboard/js/components/slidepanel.min.js"></script>
+<script src="../public/dashboard/js/components/switchery.min.js"></script>
+
+<script src="../public/dashboard/js/components/aspieprogress.min.js"></script>
+
+
+<script src="../public/dashboard/assets/examples/js/dashboard/ecommerce.min.js"></script>
+
+</body>
+</html>
