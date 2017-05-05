@@ -252,118 +252,83 @@
 <!-- Page -->
 <div class="page animsition">
     <div class="page-header">
-        <h1 class="page-title font-size-26 font-weight-100">Ecommerce Overview</h1>
+        <h1 class="page-title">Categories</h1>
     </div>
-    <div class="page-content container-fluid">
-        <div class="row" data-plugin="matchHeight" data-by-row="true">
-            <!-- First Row -->
-            <div class="col-lg-3 col-sm-6 col-xs-12 info-panel">
-                <div class="widget widget-shadow">
-                    <div class="widget-content bg-white padding-20">
-                        <button type="button" class="btn btn-floating btn-sm btn-warning">
-                            <i class="icon wb-shopping-cart"></i>
-                        </button>
-                        <span class="margin-left-15 font-weight-400">Users</span>
-                        <div class="content-text text-center margin-bottom-0">
-                            <i class="text-danger icon wb-triangle-up font-size-20">
-                            </i>
-                            <span class="font-size-40 font-weight-100">399</span>
-                            <p class="blue-grey-400 font-weight-100 margin-0">+45% From previous month</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 info-panel">
-                <div class="widget widget-shadow">
-                    <div class="widget-content bg-white padding-20">
-                        <button type="button" class="btn btn-floating btn-sm btn-danger">
-                            <i class="icon fa-dollar"></i>
-                        </button>
-                        <span class="margin-left-15 font-weight-400">Blog</span>
-                        <div class="content-text text-center margin-bottom-0">
-                            <i class="text-success icon wb-triangle-down font-size-20">
-                            </i>
-                            <span class="font-size-40 font-weight-100">$18,628</span>
-                            <p class="blue-grey-400 font-weight-100 margin-0">+45% From previous month</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 info-panel">
-                <div class="widget widget-shadow">
-                    <div class="widget-content bg-white padding-20">
-                        <button type="button" class="btn btn-floating btn-sm btn-success">
-                            <i class="icon wb-eye"></i>
-                        </button>
-                        <span class="margin-left-15 font-weight-400">Reads</span>
-                        <div class="content-text text-center margin-bottom-0">
-                            <i class="text-danger icon wb-triangle-up font-size-20">
-                            </i>
-                            <span class="font-size-40 font-weight-100">23,456</span>
-                            <p class="blue-grey-400 font-weight-100 margin-0">+25% From previous month</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 info-panel">
-                <div class="widget widget-shadow">
-                    <div class="widget-content bg-white padding-20">
-                        <button type="button" class="btn btn-floating btn-sm btn-primary">
-                            <i class="icon wb-user"></i>
-                        </button>
-                        <span class="margin-left-15 font-weight-400">CUSTOMERS</span>
-                        <div class="content-text text-center margin-bottom-0">
-                            <i class="text-danger icon wb-triangle-up font-size-20">
-                            </i>
-                            <span class="font-size-40 font-weight-100">4,367</span>
-                            <p class="blue-grey-400 font-weight-100 margin-0">+25% From previous month</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End First Row -->
+    <div class="page-content">
+        <!-- Panel -->
+        <div class="panel">
+            <div class="panel-body container-fluid">
+                <div class="row row-lg">
 
-            <!-- second Row -->
-            <div class="col-ms-12 col-xs-12 col-md-12" id="ecommerceChartView">
-                <div class="widget widget-shadow">
-                    <div class="widget-header padding-20">
-                        <div class="btn-group dropdown chart-menu">
-                            <button type="button" class="btn btn-outline btn-default dropdown-toggle" data-toggle="dropdown">
-                                PRODUCTS SALES
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu animate" role="menu">
-                                <li role="presentation">
-                                    <a href="#" role="menuitem">Sales</a>
-                                </li>
-                                <li role="presentation">
-                                    <a href="#" role="menuitem">Total sales</a>
-                                </li>
-                                <li role="presentation">
-                                    <a href="#" role="menuitem">profit</a>
-                                </li>
-                            </ul>
+
+                    <div class="col-md-12">
+                        <!-- Example Bordered Table -->
+                        <div class="example-wrap">
+                            <h4 class="example-title">Blog List Table</h4>
+                            <div class="example table-responsive">
+                                <!--
+                                 <div class="alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <p class="text-center"></p>
+                                </div>
+                                 -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Blog Title</th>
+                                        <th>Date Posted</th>
+                                        <th class="text-nowrap">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>#234012</td>
+                                        <td>A sample blog post</td>
+                                        <td>24/11/17</td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                                                    data-original-title="View">
+                                                <a href="" ><i class="icon wb-eye" aria-hidden="true"></i></a>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                                                    data-original-title="Edit">
+                                                <a href="" ><i class="icon wb-edit" aria-hidden="true"></i></a>
+                                            </button>
+                                            <button type="button"  data-toggle="modal" href="#" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                                                    data-original-title="Delete">
+                                                <i class="icon wb-close" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <!-- Modal For Delete -->
+                                    <div class="modal fade" id="{{$category->id}}" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title text-center">Warning!!!</h4>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <p style="font-weight: bold; font-size:24px;">Do you want to delete the category called <span style="text-transform: capitalize;">{{$category->category_name}}</span>?</p>
+                                                    <img class="img-responsive center-block" width="30%" src="public/dashboard/img/delete.png" alt="">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a data-dismiss="modal" class="btn btn-info"><i class="zmdi zmdi-close"></i> Close</a> <a href="{{url('delete-category')}}/{{$category->id}}/{{str_slug($category->category_name)}}" class="btn btn-danger"><i class="zmdi zmdi-delete"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <ul class="nav nav-pills nav-pills-rounded chart-action" data-plugin="nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#scoreLineToDay">Day</a></li>
-                            <li><a data-toggle="tab" href="#scoreLineToWeek">Week</a></li>
-                            <li><a data-toggle="tab" href="#scoreLineToMonth">Month</a></li>
-                        </ul>
-                    </div>
-                    <div class="widget-content tab-content bg-white padding-20">
-                        <div class="ct-chart tab-pane active" id="scoreLineToDay"></div>
-                        <div class="ct-chart tab-pane" id="scoreLineToWeek"></div>
-                        <div class="ct-chart tab-pane" id="scoreLineToMonth"></div>
                     </div>
                 </div>
             </div>
-            <!-- End Second Row -->
-
-<!-- End Third Row -->
         </div>
+
     </div>
 </div>
-<!-- End Page -->
 
 <!-- Footer -->
 <footer class="site-footer">
